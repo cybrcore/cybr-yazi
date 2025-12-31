@@ -12,16 +12,18 @@
 <img src="../assets/inspiration/insp-yazi.png" width="800"/></td>
 
 # Steps
-### 1. Install yazi
-```sh
-sudo pacman -S yazi
-```
-### 2. Create theme file
+### 0. Before you start
+- Make sure [Geist Mono Nerd Font](../INSTALL.md##Prerequisites&Setup) is installed
+- Make sure kitty is installed: `sudo pacman -S kitty` and theme is applied
+- Make sure yazi is installed: `sudo pacman -S yazi`
+- See [Installation Guide](../INSTALL.md) if you haven't set up prerequisites yet
+
+### 1. Create theme file
 ```sh
 $EDITOR ~/.config/yazi/CYBRyazi.theme
 ```
-### 3. Insert [CYBRyazi](CYBRyazi.toml)
-### 4. Restart yazi
+### 2. Insert [CYBRyazi](CYBRyazi.toml)
+### 3. Restart yazi
 ```sh
 killall yazi && yazi
 ```
