@@ -5,12 +5,6 @@
 # Source:     ~/.config/yazi/CYBRyazi.theme
 # ---------------------------------------
 
-# Theme metadata
-name = "CYBRyazi"
-author = "scherrer-txt"
-version = "1.0.0"
-description = "Cyberpunk color scheme"
-
 # : Manager {{{
 
 [mgr]
@@ -44,6 +38,12 @@ border_style  = { fg = "lightred" }
 
 # Highlighting
 syntect_theme = "/dev/null"
+
+[indicator]
+preview = { fg = "black", bg = "red" }
+parent =  { fg = "red", bg = "lightred" }
+current = { fg = "black", bg = "red" }
+padding = { open = "", close = "" }
 
 # : }}}
 
@@ -117,18 +117,18 @@ separator_style = { fg = "lightcyan" }
 # : Confirmation {{{
 
 [confirm]
-border = { fg = "yellow", bg = "black" }
-title  = { fg = "yellow" }
+border     = { fg = "yellow", bg = "black" }
+title      = { fg = "yellow" }
 body       = {}
 list       = { fg = "yellow" }
-btn_yes     = { fg = "black", bg = "yellow" }
+btn_yes    = { fg = "black", bg = "yellow" }
 btn_no     = { fg = "yellow", bg = "lightyellow" }
 btn_labels = [ "  [Y]es  ", "  (N)o  " ]
 
 # : }}}
 
 
-# : Spotter {{{ ???
+# : Spotter {{{
 
 [spot]
 border = { fg = "green" }
@@ -156,7 +156,7 @@ icon_error = ""
 # : }}}
 
 
-# : Picker {{{ ???
+# : Picker {{{
 
 [pick]
 border   = { fg = "blue" }
@@ -222,13 +222,13 @@ file = { fg = "red" }
 
 rules = [
 	# Images
-	{ mime = "image/*", fg = "yellow" },
+	#{ mime = "image/*", fg = "yellow" },
 
 	# Media
-	{ mime = "{audio,video}/*", fg = "magenta" },
+	#{ mime = "{audio,video}/*", fg = "magenta" },
 
 	# Archives
-	{ mime = "application/{zip,rar,7z*,tar,gzip,xz,zstd,bzip*,lzma,compress,archive,cpio,arj,xar,ms-cab*}", fg = "red" },
+	{ mime = "application/{zip,rar,7z*,tar,gzip,xz,zstd,bzip*,lzma,compress,archive,cpio,arj,xar,ms-cab*}", fg = "white" },
 
 	# Documents
 	{ mime = "application/{pdf,doc,rtf}", fg = "cyan" },
@@ -237,7 +237,7 @@ rules = [
 	{ mime = "inode/empty", fg = "white" },
 
 	# Special files
-	{ url = "*", is = "orphan", bg = "red" },
+	{ url = "*", is = "orphan", fg = "magenta"},
 	{ url = "*", is = "exec"  , fg = "green" },
 
 	# Dummy files
@@ -245,8 +245,8 @@ rules = [
 	{ url = "*/", is = "dummy", bg = "red" },
 
 	# Fallback
-	#{ url = "*", fg = "red" },
-	#{ url = "*/", fg = "magenta" }
+	{ url = "*", fg = "cyan" },
+	{ url = "*/", fg = "red" },
 	{ url = "*", fg = "red", weight = 9999 }
 ]
 
@@ -260,20 +260,20 @@ colored = false
 
 globs = []
 dirs  = [
-	{ name = ".config", text = "" },
-	{ name = ".git", text = "" },
-	{ name = ".github", text = "" },
-	{ name = ".npm", text = "" },
-	{ name = "Desktop", text = "" },
-	{ name = "Development", text = "" },
-	{ name = "Documents", text = "" },
-	{ name = "Downloads", text = "" },
-	{ name = "Library", text = "" },
-	{ name = "Movies", text = "" },
-	{ name = "Music", text = "" },
-	{ name = "Pictures", text = "" },
-	{ name = "Public", text = "" },
-	{ name = "Videos", text = "" },
+	#{ name = ".config", text = "" },
+	#{ name = ".git", text = "" },
+	#{ name = ".github", text = "" },
+	#{ name = ".npm", text = "" },
+	#{ name = "Desktop", text = "" },
+	#{ name = "Development", text = "" },
+	#{ name = "Documents", text = "" },
+	#{ name = "Downloads", text = "" },
+	#{ name = "Library", text = "" },
+	#{ name = "Movies", text = "" },
+	#{ name = "Music", text = "" },
+	#{ name = "Pictures", text = "" },
+	#{ name = "Public", text = "" },
+	#{ name = "Videos", text = "" },
 ]
 files = [
 	{ name = ".babelrc", text = "", fg = "#F2D230" },
