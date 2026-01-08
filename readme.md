@@ -20,6 +20,7 @@
 - Make sure kitty is installed: `sudo pacman -S kitty` and theme is applied
 - Make sure yazi is installed: `sudo pacman -S yazi`
 - See [Installation Guide](../INSTALL.md) if you haven't set up prerequisites yet
+- [Github](https://github.com/sxyazi/yazi)
 
 ### 1. Create theme file
 ```sh
