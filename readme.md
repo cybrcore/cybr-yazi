@@ -17,7 +17,7 @@ fc-cache -fv
 ```
 - Make sure kitty is installed: `sudo pacman -S kitty` and [cybrcore theme](https://github.com/cybrcore/cybr-kitty) is applied
 - Make sure yazi is installed: `sudo pacman -S yazi`
-- See [Installation Guide](https://github.com/cybrcore/cybrland/blob/main/INSTALL.md) if you`re coming from [cybr-hyprland](https://github.com/cybrcore/cybrland) and haven't set up prerequisites yet
+- See [Installation Guide](https://github.com/cybrcore/cybrdots/blob/main/INSTALL.md) if you're coming from [cybr-hyprland](https://github.com/cybrcore/cybr-hyprland) and haven't set up prerequisites yet
 - [yazi Github](https://github.com/sxyazi/yazi)
 
 ## 1. Create theme file
